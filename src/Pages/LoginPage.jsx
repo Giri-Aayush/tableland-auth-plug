@@ -47,18 +47,19 @@ const LoginPage = () => {
         >
           <span className='w-10 h-10 px-2'>
             <HiOutlineUser className='w-full h-full text-black ' />
-          <span>
-            <input
-              type='text'
-              placeholder='Username/Email'
-              name='email'
-              value={values.email}
-              autoComplete='off'
-              className='w-80 outline-none text-white text-xl'
-              onChange={handleChange}
-              onBlur={handleBlur}
-              style={{ backgroundColor: "transparent" }}
-            />
+            <span>
+              <input
+                type='text'
+                placeholder='Username/Email'
+                name='email'
+                value={values.email}
+                autoComplete='off'
+                className='w-80 outline-none text-white text-xl'
+                onChange={handleChange}
+                onBlur={handleBlur}
+                style={{ backgroundColor: "transparent" }}
+              />
+            </span>
           </span>
         </div>
         {errors.email && touched.email ? (
